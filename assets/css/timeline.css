@@ -1,0 +1,289 @@
+/* timeline.css - 时间轴样式 */
+
+/* 时间轴容器 */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: var(--spacing-xl) 0;
+}
+
+/* 时间轴中央线 */
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        var(--border-color) 5%,
+        var(--border-color) 95%,
+        transparent
+    );
+}
+
+/* 年份分组 */
+.timeline-year {
+    position: relative;
+    margin-bottom: var(--spacing-2xl);
+}
+
+/* 年份标签 */
+.timeline-year-label {
+    position: sticky;
+    top: calc(var(--header-height) + var(--spacing-md));
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--spacing-lg);
+    z-index: 10;
+}
+
+.timeline-year-label span {
+    background-color: var(--color-primary);
+    color: white;
+    padding: var(--spacing-sm) var(--spacing-lg);
+    border-radius: var(--radius-full);
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-family: var(--font-serif);
+    box-shadow: var(--shadow-md);
+}
+
+/* 月份分组 */
+.timeline-month {
+    position: relative;
+    margin-bottom: var(--spacing-xl);
+}
+
+/* 月份标签 */
+.timeline-month-label {
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--spacing-md);
+}
+
+.timeline-month-label span {
+    background-color: var(--bg-card);
+    color: var(--text-secondary);
+    padding: var(--spacing-xs) var(--spacing-md);
+    border-radius: var(--radius-full);
+    font-size: 0.9rem;
+    border: 1px solid var(--border-color);
+}
+
+/* 时间轴项目列表 */
+.timeline-items {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+/* 时间轴项目 */
+.timeline-item {
+    position: relative;
+    width: calc(50% - 30px);
+    padding: var(--spacing-md) var(--spacing-lg);
+    background-color: var(--bg-card);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+    cursor: pointer;
+}
+
+/* 左侧项目 */
+.timeline-item:nth-child(odd) {
+    margin-right: auto;
+    margin-left: 0;
+}
+
+/* 右侧项目 */
+.timeline-item:nth-child(even) {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+/* 时间轴节点 */
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 12px;
+    height: 12px;
+    background-color: var(--bg-card);
+    border: 3px solid var(--color-primary);
+    border-radius: 50%;
+    transform: translateY(-50%);
+    transition: background-color var(--transition-fast), transform var(--transition-fast);
+    z-index: 1;
+}
+
+/* 左侧项目节点位置 */
+.timeline-item:nth-child(odd)::before {
+    right: -36px;
+}
+
+/* 右侧项目节点位置 */
+.timeline-item:nth-child(even)::before {
+    left: -36px;
+}
+
+/* 连接线 */
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 24px;
+    height: 2px;
+    background-color: var(--border-color);
+    transform: translateY(-50%);
+}
+
+/* 左侧项目连接线 */
+.timeline-item:nth-child(odd)::after {
+    right: -24px;
+}
+
+/* 右侧项目连接线 */
+.timeline-item:nth-child(even)::after {
+    left: -24px;
+}
+
+/* 悬停效果 */
+.timeline-item:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.timeline-item:hover::before {
+    background-color: var(--color-primary);
+    transform: translateY(-50%) scale(1.2);
+}
+
+/* 时间轴项目内容 */
+.timeline-item-date {
+    font-size: 0.8rem;
+    color: var(--text-tertiary);
+    margin-bottom: var(--spacing-xs);
+}
+
+.timeline-item-title {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-xs);
+    line-height: 1.4;
+}
+
+.timeline-item-category {
+    font-size: 0.75rem;
+    color: var(--color-primary);
+}
+
+/* 时间轴快速导航 */
+.timeline-nav {
+    position: fixed;
+    right: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    z-index: var(--z-sticky);
+}
+
+.timeline-nav-item {
+    padding: var(--spacing-xs) var(--spacing-sm);
+    background-color: var(--bg-card);
+    border-radius: var(--radius-sm);
+    font-size: 0.8rem;
+    color: var(--text-tertiary);
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-fast);
+}
+
+.timeline-nav-item:hover,
+.timeline-nav-item.active {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+/* 时间轴为空状态 */
+.timeline-empty {
+    text-align: center;
+    padding: var(--spacing-3xl);
+    color: var(--text-tertiary);
+}
+
+/* 时间轴统计 */
+.timeline-stats {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-2xl);
+    margin-bottom: var(--spacing-2xl);
+    padding: var(--spacing-lg);
+    background-color: var(--bg-card);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+}
+
+.timeline-stat {
+    text-align: center;
+}
+
+.timeline-stat-value {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    font-family: var(--font-serif);
+}
+
+.timeline-stat-label {
+    font-size: 0.875rem;
+    color: var(--text-tertiary);
+}
+
+/* 滚动动画 */
+.timeline-item {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.timeline-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.timeline-item:nth-child(odd).visible {
+    animation: slideInLeft 0.5s ease forwards;
+}
+
+.timeline-item:nth-child(even).visible {
+    animation: slideInRight 0.5s ease forwards;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

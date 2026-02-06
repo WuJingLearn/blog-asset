@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>页面未找到 - My Blog</title>
+    <script>
+        // GitHub Pages 单页应用路由处理
+        // 当直接访问子路由时（如 /post/xxx），GitHub Pages 会返回 404
+        // 此脚本将路径转换为 hash 路由并重定向到首页
+        (function() {
+            var path = window.location.pathname;
+            var search = window.location.search;
+            
+            // 如果已经在根路径，不做处理
+            if (path === '/' || path === '/index.html') {
+                return;
+            }
+            
+            // 获取基础路径（如果部署在子目录）
+            var basePath = ''; // 如果部署在 username.github.io/repo-name，设置为 '/repo-name'
+            
+            // 移除基础路径
+            if (basePath && path.startsWith(basePath)) {
+                path = path.slice(basePath.length);
+            }
+            
+            // 重定向到首页，并将路径转换为 hash
+            var newUrl = window.location.origin + basePath + '/#' + path + search;
+            window.location.replace(newUrl);
+        })();
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background-color: #fafaf8;
+            color: #2c3e50;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .error-icon {
+            font-size: 6rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+        
+        p {
+            color: #5d6d7e;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            background-color: #16a085;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        
+        .back-link:hover {
+            background-color: #138d75;
+            transform: translateY(-2px);
+        }
+        
+        .redirect-notice {
+            margin-top: 2rem;
+            font-size: 0.875rem;
+            color: #95a5a6;
+        }
+        
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #1a1a1a;
+                color: #e4e4e4;
+            }
+            
+            p {
+                color: #a0a0a0;
+            }
+            
+            .back-link {
+                background-color: #1abc9c;
+            }
+            
+            .back-link:hover {
+                background-color: #16a085;
+            }
+            
+            .redirect-notice {
+                color: #707070;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="error-icon">🔍</div>
+    <h1>页面未找到</h1>
+    <p>抱歉，您访问的页面不存在或已被移动</p>
+    <a href="/" class="back-link">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m12 19-7-7 7-7"></path>
+            <path d="M19 12H5"></path>
+        </svg>
+        返回首页
+    </a>
+    <p class="redirect-notice">正在尝试自动跳转...</p>
+</body>
+</html>

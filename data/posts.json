@@ -1,0 +1,246 @@
+{
+  "posts": [
+    {
+      "id": "2024-03-welcome",
+      "title": "欢迎来到我的博客",
+      "filename": "posts/2024/01-welcome.md",
+      "date": "2024-03-15",
+      "category": "随笔",
+      "tags": ["博客", "开始"],
+      "description": "这是我的第一篇博客文章，欢迎来到我的个人空间，在这里我将分享我的技术学习心得和生活感悟。",
+      "readTime": 3
+    },
+    {
+      "id": "2024-03-javascript-tips",
+      "title": "JavaScript 实用技巧分享",
+      "filename": "posts/2024/02-javascript-tips.md",
+      "date": "2024-03-20",
+      "category": "技术",
+      "tags": ["JavaScript", "前端", "编程"],
+      "description": "分享一些日常开发中常用的 JavaScript 技巧，包括数组操作、对象处理、异步编程等实用方法。",
+      "readTime": 8
+    },
+    {
+      "id": "2024-04-css-layout",
+      "title": "现代 CSS 布局技术详解",
+      "filename": "posts/2024/03-css-layout.md",
+      "date": "2024-04-10",
+      "category": "技术",
+      "tags": ["CSS", "前端", "布局"],
+      "description": "深入探讨 Flexbox 和 Grid 布局，以及如何在实际项目中灵活运用这些现代 CSS 布局技术。",
+      "readTime": 10
+    },
+    {
+      "id": "2024-05-reading-notes",
+      "title": "《代码整洁之道》读书笔记",
+      "filename": "posts/2024/04-reading-notes.md",
+      "date": "2024-05-01",
+      "category": "读书",
+      "tags": ["读书笔记", "编程", "代码质量"],
+      "description": "记录阅读 Robert C. Martin 的《代码整洁之道》一书的心得体会，以及对代码质量的思考。",
+      "readTime": 6
+    },
+    {
+      "id": "2025-01-spring-boot",
+      "title": "Spring Boot 快速入门指南",
+      "filename": "posts/2025/01-spring-boot-intro.md",
+      "date": "2025-01-15",
+      "category": "技术",
+      "tags": ["Java", "Spring Boot", "后端"],
+      "description": "详细介绍 Spring Boot 框架的核心特性和快速上手方法，帮助初学者快速掌握现代 Java 开发。",
+      "readTime": 8
+    },
+    {
+      "id": "2025-02-mybatis",
+      "title": "MyBatis 最佳实践总结",
+      "filename": "posts/2025/02-mybatis-best-practices.md",
+      "date": "2025-02-10",
+      "category": "技术",
+      "tags": ["MyBatis", "数据库", "ORM"],
+      "description": "总结 MyBatis 开发中的最佳实践，包括 SQL 优化、动态 SQL、缓存策略等内容。",
+      "readTime": 7
+    },
+    {
+      "id": "2025-03-docker",
+      "title": "Docker 容器化部署实战",
+      "filename": "posts/2025/03-docker-deploy.md",
+      "date": "2025-03-05",
+      "category": "技术",
+      "tags": ["Docker", "DevOps", "部署"],
+      "description": "从零开始学习 Docker 容器化部署，包括镜像构建、容器编排和实际部署案例。",
+      "readTime": 10
+    },
+    {
+      "id": "2025-04-redis",
+      "title": "Redis 缓存应用实践",
+      "filename": "posts/2025/04-redis-cache.md",
+      "date": "2025-04-20",
+      "category": "技术",
+      "tags": ["Redis", "缓存", "性能优化"],
+      "description": "深入探讨 Redis 在实际项目中的缓存应用，包括缓存策略、数据结构选择和常见问题解决。",
+      "readTime": 9
+    },
+    {
+      "id": "2025-05-microservice",
+      "title": "微服务架构设计与实践",
+      "filename": "posts/2025/05-microservice-arch.md",
+      "date": "2025-05-12",
+      "category": "技术",
+      "tags": ["微服务", "架构设计", "Spring Cloud"],
+      "description": "探讨微服务架构的设计原则、技术选型和实践经验，帮助团队构建可扩展的分布式系统。",
+      "readTime": 12
+    },
+    {
+      "id": "2025-06-vue3",
+      "title": "Vue 3 Composition API 深度解析",
+      "filename": "posts/2025/06-vue3-composition-api.md",
+      "date": "2025-06-08",
+      "category": "技术",
+      "tags": ["Vue", "前端", "JavaScript"],
+      "description": "深入理解 Vue 3 Composition API 的设计理念和使用方法，掌握现代 Vue 开发的最佳实践。",
+      "readTime": 11
+    },
+    {
+      "id": "2025-07-git",
+      "title": "Git 工作流最佳实践",
+      "filename": "posts/2025/07-git-workflow.md",
+      "date": "2025-07-15",
+      "category": "技术",
+      "tags": ["Git", "版本控制", "团队协作"],
+      "description": "介绍主流的 Git 工作流模式和团队协作规范，提升代码管理效率和质量。",
+      "readTime": 10
+    },
+    {
+      "id": "2025-08-mysql",
+      "title": "MySQL 性能优化实战指南",
+      "filename": "posts/2025/08-mysql-optimization.md",
+      "date": "2025-08-22",
+      "category": "技术",
+      "tags": ["MySQL", "数据库", "性能优化"],
+      "description": "从索引设计、SQL 优化到架构调优，全面介绍 MySQL 性能优化的方法和技巧。",
+      "readTime": 13
+    },
+    {
+      "id": "2025-09-design-patterns",
+      "title": "设计模式在实际项目中的应用",
+      "filename": "posts/2025/09-design-patterns.md",
+      "date": "2025-09-10",
+      "category": "技术",
+      "tags": ["设计模式", "Java", "架构设计"],
+      "description": "结合实际项目案例，讲解常用设计模式的应用场景和实现方式，提升代码质量和可维护性。",
+      "readTime": 14
+    },
+    {
+      "id": "2025-10-unit-testing",
+      "title": "单元测试最佳实践",
+      "filename": "posts/2025/10-unit-testing.md",
+      "date": "2025-10-18",
+      "category": "技术",
+      "tags": ["测试", "JUnit", "代码质量"],
+      "description": "介绍单元测试的编写方法和最佳实践，使用 JUnit 5 和 Mockito 提升代码质量和可维护性。",
+      "readTime": 15
+    },
+    {
+      "id": "2026-01-typescript",
+      "title": "TypeScript 高级类型系统详解",
+      "filename": "posts/2026/01-typescript-advanced-types.md",
+      "date": "2026-01-10",
+      "category": "技术",
+      "tags": ["TypeScript", "前端", "类型系统"],
+      "description": "深入探讨 TypeScript 高级类型特性，包括泛型、条件类型、映射类型等，掌握类型编程技巧。",
+      "readTime": 12
+    },
+    {
+      "id": "2026-02-react-hooks",
+      "title": "React Hooks 深入浅出",
+      "filename": "posts/2026/02-react-hooks-guide.md",
+      "date": "2026-02-14",
+      "category": "技术",
+      "tags": ["React", "Hooks", "前端"],
+      "description": "全面讲解 React Hooks 的使用方法和实现原理，包括常用 Hooks 和自定义 Hooks 的最佳实践。",
+      "readTime": 16
+    },
+    {
+      "id": "2026-03-webpack5",
+      "title": "Webpack 5 模块打包原理与优化",
+      "filename": "posts/2026/03-webpack5-optimization.md",
+      "date": "2026-03-08",
+      "category": "技术",
+      "tags": ["Webpack", "前端工程化", "构建工具"],
+      "description": "深入理解 Webpack 5 的模块打包机制和性能优化策略，提升前端项目构建效率。",
+      "readTime": 14
+    },
+    {
+      "id": "2026-04-graphql",
+      "title": "GraphQL API 设计与实践",
+      "filename": "posts/2026/04-graphql-api-design.md",
+      "date": "2026-04-12",
+      "category": "技术",
+      "tags": ["GraphQL", "API", "后端"],
+      "description": "介绍 GraphQL 的核心概念和 API 设计实践，对比 RESTful API 的优劣势。",
+      "readTime": 13
+    },
+    {
+      "id": "2026-05-kubernetes",
+      "title": "Kubernetes 容器编排入门",
+      "filename": "posts/2026/05-kubernetes-basics.md",
+      "date": "2026-05-20",
+      "category": "技术",
+      "tags": ["Kubernetes", "容器", "DevOps"],
+      "description": "介绍 Kubernetes 的核心概念和基本使用方法，掌握容器编排的基础知识。",
+      "readTime": 15
+    },
+    {
+      "id": "2026-06-frontend-performance",
+      "title": "前端性能优化实战指南",
+      "filename": "posts/2026/06-frontend-performance.md",
+      "date": "2026-06-15",
+      "category": "技术",
+      "tags": ["性能优化", "前端", "Web"],
+      "description": "全面介绍前端性能优化的方法和技巧,从加载优化到运行时优化,提升用户体验。",
+      "readTime": 17
+    },
+    {
+      "id": "2026-07-mongodb",
+      "title": "MongoDB 文档数据库实战",
+      "filename": "posts/2026/07-mongodb-guide.md",
+      "date": "2026-07-25",
+      "category": "技术",
+      "tags": ["MongoDB", "NoSQL", "数据库"],
+      "description": "介绍 MongoDB 的核心概念和使用方法，包括数据建模、查询优化和索引设计。",
+      "readTime": 14
+    },
+    {
+      "id": "2026-08-cicd",
+      "title": "CI/CD 持续集成与部署实践",
+      "filename": "posts/2026/08-cicd-practices.md",
+      "date": "2026-08-30",
+      "category": "技术",
+      "tags": ["CI/CD", "DevOps", "自动化"],
+      "description": "介绍 CI/CD 的核心概念和实践方法，使用 GitHub Actions 和 GitLab CI 实现自动化流水线。",
+      "readTime": 16
+    },
+    {
+      "id": "2026-09-websocket",
+      "title": "WebSocket 实时通信开发",
+      "filename": "posts/2026/09-websocket-guide.md",
+      "date": "2026-09-18",
+      "category": "技术",
+      "tags": ["WebSocket", "实时通信", "网络编程"],
+      "description": "介绍 WebSocket 协议的原理和应用，实现实时聊天、消息推送等功能。",
+      "readTime": 18
+    },
+    {
+      "id": "2026-10-refactoring",
+      "title": "代码重构的艺术",
+      "filename": "posts/2026/10-code-refactoring.md",
+      "date": "2026-10-25",
+      "category": "技术",
+      "tags": ["重构", "代码质量", "最佳实践"],
+      "description": "介绍代码重构的原则、方法和实践技巧，提升代码质量和可维护性。",
+      "readTime": 15
+    }
+  ],
+  "categories": ["技术", "随笔", "读书", "生活"],
+  "tags": ["JavaScript", "CSS", "前端", "编程", "博客", "开始", "布局", "读书笔记", "代码质量", "Java", "Spring Boot", "后端", "MyBatis", "数据库", "ORM", "Docker", "DevOps", "部署", "Redis", "缓存", "性能优化", "微服务", "架构设计", "Spring Cloud", "Vue", "Git", "版本控制", "团队协作", "MySQL", "设计模式", "测试", "JUnit", "TypeScript", "类型系统", "React", "Hooks", "Webpack", "前端工程化", "构建工具", "GraphQL", "API", "Kubernetes", "容器", "Web", "MongoDB", "NoSQL", "CI/CD", "自动化", "WebSocket", "实时通信", "网络编程", "重构", "最佳实践"]
+}
