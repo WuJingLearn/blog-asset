@@ -13,7 +13,7 @@ const Article = {
      */
     async init() {
         try {
-            const response = await fetch('data/posts.json');
+            const response = await fetch(Config.getPath('data/posts.json'));
             if (!response.ok) throw new Error('Failed to load posts');
             
             const data = await response.json();
@@ -86,7 +86,7 @@ const Article = {
         }
 
         try {
-            const response = await fetch(filename);
+            const response = await fetch(Config.getPath(filename));
             if (!response.ok) throw new Error('Failed to load article');
             
             const content = await response.text();
