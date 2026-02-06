@@ -1,7 +1,7 @@
 ---
 title: Redis 基本介绍
-date: 2024-08-15
-category: 技术
+date: 2026-02-06
+category: Redis
 tags: [Redis, 数据库, NoSQL, 缓存, 后端]
 description: 全面介绍 Redis 的基本概念、核心特性、数据类型和应用场景，帮助你快速了解这个强大的内存数据库。
 ---
