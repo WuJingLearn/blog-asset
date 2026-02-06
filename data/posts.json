@@ -46,7 +46,7 @@
       "filename": "posts/2024/05-spring-framework-popularity.md",
       "date": "2024-06-15",
       "category": "技术",
-      "tags": ["Java", "Spring", "框架", "后端"],
+      "tags": ["Java", "Spring", "框架"],
       "description": "深入分析 Spring 框架流行的核心原因，探讨其主要优势和对 Java 企业级应用开发的革命性影响。",
       "readTime": 12
     },
@@ -56,7 +56,7 @@
       "filename": "posts/2024/06-spring-container.md",
       "date": "2024-07-20",
       "category": "Spring",
-      "tags": ["Java", "Spring", "容器", "IoC", "后端"],
+      "tags": ["Java", "Spring", "框架"],
       "description": "深入浅出讲解 Spring 容器的概念、工作原理和实际应用，帮助你理解 Spring 框架的核心机制。",
       "readTime": 10
     },

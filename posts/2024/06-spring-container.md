@@ -2,7 +2,7 @@
 title: Spring 容器详解
 date: 2024-07-20
 category: 技术
-tags: [Java, Spring, 容器, IoC, 后端]
+tags: [Java, Spring]
 description: 深入浅出讲解 Spring 容器的概念、工作原理和实际应用，帮助你理解 Spring 框架的核心机制。
 ---
 

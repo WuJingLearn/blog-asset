@@ -53,6 +53,6 @@ function welcome() {
 如果你有任何问题或建议，欢迎通过以下方式联系我：
 
 - GitHub: [我的 GitHub 主页](https://github.com)
-- Email: example@email.com
+- Phone: 18110828727
 
 感谢你的访问，希望我的文章能对你有所帮助！
