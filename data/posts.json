@@ -51,6 +51,16 @@
       "readTime": 12
     },
     {
+      "id": "2024-07-spring-container",
+      "title": "Spring 容器详解",
+      "filename": "posts/2024/06-spring-container.md",
+      "date": "2024-07-20",
+      "category": "Spring",
+      "tags": ["Java", "Spring", "容器", "IoC", "后端"],
+      "description": "深入浅出讲解 Spring 容器的概念、工作原理和实际应用，帮助你理解 Spring 框架的核心机制。",
+      "readTime": 10
+    },
+    {
       "id": "2025-01-spring-boot",
       "title": "Spring Boot 快速入门指南",
       "filename": "posts/2025/01-spring-boot-intro.md",
@@ -152,5 +162,5 @@
     }
   ],
   "categories": ["技术", "随笔", "读书", "生活"],
-  "tags": ["JavaScript", "CSS", "前端", "编程", "博客", "开始", "布局", "读书笔记", "代码质量", "Java", "Spring", "框架", "Spring Boot", "后端", "MyBatis", "数据库", "ORM", "Docker", "DevOps", "部署", "Redis", "缓存", "性能优化", "微服务", "架构设计", "Spring Cloud", "Vue", "Git", "版本控制", "团队协作", "MySQL", "设计模式", "测试", "JUnit"]
+  "tags": ["JavaScript", "CSS", "前端", "编程", "博客", "开始", "布局", "读书笔记", "代码质量", "Java", "Spring", "容器", "IoC", "框架", "Spring Boot", "后端", "MyBatis", "数据库", "ORM", "Docker", "DevOps", "部署", "Redis", "缓存", "性能优化", "微服务", "架构设计", "Spring Cloud", "Vue", "Git", "版本控制", "团队协作", "MySQL", "设计模式", "测试", "JUnit"]
 }
