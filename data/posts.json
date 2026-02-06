@@ -41,6 +41,16 @@
       "readTime": 6
     },
     {
+      "id": "2024-06-spring-framework",
+      "title": "Spring 框架为什么流行",
+      "filename": "posts/2024/05-spring-framework-popularity.md",
+      "date": "2024-06-15",
+      "category": "技术",
+      "tags": ["Java", "Spring", "框架", "后端"],
+      "description": "深入分析 Spring 框架流行的核心原因，探讨其主要优势和对 Java 企业级应用开发的革命性影响。",
+      "readTime": 12
+    },
+    {
       "id": "2025-01-spring-boot",
       "title": "Spring Boot 快速入门指南",
       "filename": "posts/2025/01-spring-boot-intro.md",
@@ -142,5 +152,5 @@
     }
   ],
   "categories": ["技术", "随笔", "读书", "生活"],
-  "tags": ["JavaScript", "CSS", "前端", "编程", "博客", "开始", "布局", "读书笔记", "代码质量", "Java", "Spring Boot", "后端", "MyBatis", "数据库", "ORM", "Docker", "DevOps", "部署", "Redis", "缓存", "性能优化", "微服务", "架构设计", "Spring Cloud", "Vue", "Git", "版本控制", "团队协作", "MySQL", "设计模式", "测试", "JUnit"]
+  "tags": ["JavaScript", "CSS", "前端", "编程", "博客", "开始", "布局", "读书笔记", "代码质量", "Java", "Spring", "框架", "Spring Boot", "后端", "MyBatis", "数据库", "ORM", "Docker", "DevOps", "部署", "Redis", "缓存", "性能优化", "微服务", "架构设计", "Spring Cloud", "Vue", "Git", "版本控制", "团队协作", "MySQL", "设计模式", "测试", "JUnit"]
 }
